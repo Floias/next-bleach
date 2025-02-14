@@ -4,18 +4,23 @@ import { HeaderLinks } from './definitions';
 const headerLinks: HeaderLinks[] = [
   {
     id: uuid.v4(),
-    href: "home.html",
+    href: "home",
     text: "Главная"
   },
   {
     id: uuid.v4(),
-    href: "#",
+    href: "bond",
     text: "Узы"
   },
   {
     id: uuid.v4(),
-    href: "#",
-    text: "В узах"
+    href: "calendar",
+    text: "Календарь вербовок"
+  },
+  {
+    id: uuid.v4(),
+    href: "posts",
+    text: "Статьи"
   },
 ]
 

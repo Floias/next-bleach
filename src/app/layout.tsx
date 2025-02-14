@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { inter } from '@/app/ui/fonts';
+import Header from "./header";
+import "./css/global/variables.scss";
 import "./css/global/reboot.scss";
 import "./css/global/utils.scss";
 
@@ -14,8 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" theme-mode="light">
       <body className={`${inter.className}`}>
+        <Header />
         {children}
       </body>
     </html>
