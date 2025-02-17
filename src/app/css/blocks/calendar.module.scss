@@ -1,0 +1,16 @@
+.calendar {
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+  }
+
+  &__avatar {
+    width: 66px;
+    height: 68px;
+  }
+}
