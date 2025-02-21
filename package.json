@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/bcrypt": "5.0.2",
+    "bcrypt": "5.1.1",
     "classnames": "2.5.1",
     "dayjs": "1.11.13",
     "next": "15.1.7",
+    "postgres": "3.4.5",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "uuid": "11.0.5"

@@ -14,6 +14,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Сосуке Айзен',
     avatar: 'aizen',
+    image: 'aizen-big',
   },
   {
     id: uuid.v4(),
@@ -22,7 +23,7 @@ const characters = [
     isLimited: true,
     exchange: [246, 312, 48, 114],
     receiving: [213, 15],
-    duration: 4,
+    image: 'arrancar-aizen-big',
   },
   {
     id: uuid.v4(),
@@ -33,11 +34,13 @@ const characters = [
     id: uuid.v4(),
     name: 'Сосуке Айзен . Белый день',
     avatar: 'white-day-aizen',
+    image: 'white-day-aizen-big',
   },
   {
     id: uuid.v4(),
     name: 'Сосуке Айзен . Финальное слияние',
     avatar: 'final-fusion-aizen',
+    image: 'final-fusion-aizen-big',
   },
   {
     id: uuid.v4(),
@@ -51,7 +54,7 @@ const characters = [
     isLimited: true,
     exchange: [202, 334, 4, 136],
     receiving: [301, 103],
-    duration: 4,
+    image: 'barragan-big',
   },
   {
     id: uuid.v4(),
@@ -62,6 +65,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Бьякуя Кучики . Банкай',
     avatar: 'byakuya',
+    image: 'byakuya-big',
   },
   {
     id: uuid.v4(),
@@ -70,32 +74,37 @@ const characters = [
     isLimited: true,
     receiving: [279, 81],
     exchange: [312, 378, 114, 180],
-    duration: 4,
+    image: 'new-year-byakuya-big',
   },
   {
     id: uuid.v4(),
     name: 'Бьякуя Кучики . Белый день',
     avatar: 'white-day-byakuya',
+    image: 'white-day-byakuya-big',
   },
   {
     id: uuid.v4(),
     name: 'Бьякуя Кучики . Какао',
     avatar: 'coco-byakuya',
+    image: 'coco-byakuya-big',
   },
   {
     id: uuid.v4(),
     name: 'Бьякуя Кучики . Лис',
     avatar: 'demon-byakuya',
+    image: 'demon-byakuya-big',
   },
   {
     id: uuid.v4(),
     name: 'Шигекуни Генрюусай Ямамото',
     avatar: 'genryusai',
+    image: 'genryusai-big',
   },
   {
     id: uuid.v4(),
     name: 'Шигекуни Генрюусай Ямамото . Голый кулак',
     avatar: 'genryusai-v2',
+    image: 'genryusai-v2-big',
   },
   {
     id: uuid.v4(),
@@ -106,6 +115,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Гин Ичимару . Банкай',
     avatar: 'gin',
+    image: 'gin-big',
   },
   {
     id: uuid.v4(),
@@ -114,17 +124,19 @@ const characters = [
     isLimited: true,
     exchange: [213,279],
     receiving: [378, 180],
-    duration: 4,
+    image: 'arrancar-gin-big',
   },
   {
     id: uuid.v4(),
     name: 'Гин Ичимару . Лис',
     avatar: 'fox-gin',
+    image: 'fox-gin-big'
   },
   {
     id: uuid.v4(),
     name: 'Гин Ичимару . Какао',
     avatar: 'coco-gin',
+    image: 'coco-gin-big',
   },
   {
     id: uuid.v4(),
@@ -135,6 +147,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Гриммджоу',
     avatar: 'grimmjow',
+    image: 'grimmjow-big',
   },
   {
     id: uuid.v4(),
@@ -143,17 +156,19 @@ const characters = [
     isLimited: true,
     exchange: [323, 389, 125, 191],
     receiving: [290, 92],
-    duration: 4,
+    image: 'grimmjow-v2-big',
   },
   {
     id: uuid.v4(),
     name: 'Гриммджоу . Зонт',
     avatar: 'parasol-grimmjow',
+    image: 'parasol-grimmjow-big',
   },
   {
     id: uuid.v4(),
     name: 'Гриммджоу . Синий Демон',
     avatar: 'ao-oni-grimmjow',
+    image: 'ao-oni-grimmjow-big',
   },
   {
     id: uuid.v4(),
@@ -167,22 +182,25 @@ const characters = [
     isLimited: true,
     exchange: [257, 389, 191],
     receiving: [356, 158],
-    duration: 4,
+    image: 'halibel-big',
   },
   {
     id: uuid.v4(),
     name: 'Харрибел . Какао',
     avatar: 'coco-halibel',
+    image: 'coco-halibel-big',
   },
   {
     id: uuid.v4(),
     name: 'Харрибел . Лето',
     avatar: 'sammer-halibel',
+    image: 'sammer-halibel-big',
   },
   {
     id: uuid.v4(),
     name: 'Харрибел . Хеллоуин',
     avatar: 'halloween-halibel',
+    image: 'halloween-halibel-big',
   },
   {
     id: uuid.v4(),
@@ -193,6 +211,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Хиори Саругаки . Рождество',
     avatar: 'xmas-hiyori',
+    image: 'xmas-hiyori-big',
   },
   {
     id: uuid.v4(),
@@ -201,7 +220,7 @@ const characters = [
     isLimited: true,
     receiving: [224, 59],
     exchange: [257, 323, 26, 125],
-    duration: 4,
+    image: 'dangai-ichigo-big',
   },
   {
     id: uuid.v4(),
@@ -212,16 +231,19 @@ const characters = [
     id: uuid.v4(),
     name: 'Ичиго Куросаки . Купальник',
     avatar: 'swimsuit-ichigo',
+    image: 'swimsuit-ichigo-big',
   },
   {
     id: uuid.v4(),
     name: 'Ичиго Куросаки . Хеллоуин',
     avatar: 'halloween-ichigo',
+    image: 'halloween-ichigo-big',
   },
   {
     id: uuid.v4(),
     name: 'Ичиго Куросаки . Ассимиляция Зангецу',
     avatar: 'mugetsu-ichigo',
+    image: 'mugetsu-ichigo-big',
   },
   {
     id: uuid.v4(),
@@ -232,21 +254,25 @@ const characters = [
     id: uuid.v4(),
     name: 'Урюу Исида . Хеллоуин',
     avatar: 'halloween-ishida',
+    image: 'halloween-ishida-big',
   },
   {
     id: uuid.v4(),
     name: 'Ишшин Куросаки',
     avatar: 'isshin',
+    image: 'isshin-big',
   },
   {
     id: uuid.v4(),
     name: 'Джинта Ханакари',
     avatar: 'jinta',
+    image: 'jinta-big',
   },
   {
     id: uuid.v4(),
     name: 'Джуширо Укитаке',
     avatar: 'jushiro',
+    image: 'jushiro-big',
   },
   {
     id: uuid.v4(),
@@ -262,16 +288,19 @@ const characters = [
     id: uuid.v4(),
     name: 'Кенпачи Зараки',
     avatar: 'kenpachi',
+    image: 'kenpachi-big',
   },
   {
     id: uuid.v4(),
     name: 'Кенпачи Зараки . Белый день',
     avatar: 'white-day-kenpachi',
+    image: 'white-day-kenpachi-big',
   },
   {
     id: uuid.v4(),
     name: 'Кенпачи Зараки . Полная мощь',
     avatar: 'ansealed-kenpachi',
+    image: 'ansealed-kenpachi-big',
   },
   {
     id: uuid.v4(),
@@ -280,12 +309,13 @@ const characters = [
     isLimited: true,
     exchange: [235, 367, 169],
     receiving: [334, 136],
-    duration: 4,
+    image: 'kukaku-big',
   },
   {
     id: uuid.v4(),
     name: 'Куукаку Шиба . Лето',
     avatar: 'sammer-kukaku',
+    image: 'sammer-kukaku-big',
   },
   {
     id: uuid.v4(),
@@ -301,26 +331,31 @@ const characters = [
     id: uuid.v4(),
     name: 'Лиза Ядомару . Рождество',
     avatar: 'xmas-lisa',
+    image: 'xmas-lisa-big',
   },
   {
     id: uuid.v4(),
     name: 'Маюри Куроцучи . Банкай',
     avatar: 'mayuri',
+    image: 'mayuri-big',
   },
   {
     id: uuid.v4(),
     name: 'Момо Хинамори . Любовь',
     avatar: 'momo',
+    image: 'momo-big',
   },
   {
     id: uuid.v4(),
     name: 'Нанао Исе . Зонт',
     avatar: 'parasol-nanao',
+    image: 'parasol-nanao-big',
   },
   {
     id: uuid.v4(),
     name: 'Нанао Исе . Какао',
     avatar: 'coco-nanao',
+    image: 'coco-nanao-big',
   },
   {
     id: uuid.v4(),
@@ -328,7 +363,7 @@ const characters = [
     avatar: 'little-nel',
     receiving: [],
     exchange: [81],
-    duration: 4,
+    image: 'little-nel-big',
   },
   {
     id: uuid.v4(),
@@ -337,22 +372,25 @@ const characters = [
     isLimited: true,
     receiving: [235, 37],
     exchange: [268, 334, 70, 136],
-    duration: 4,
+    image: 'adult-nel-big',
   },
   {
     id: uuid.v4(),
     name: 'Неллиэль Ту Одельшванк . Купальник',
     avatar: 'swimsuit-nel',
+    image: 'swimsuit-nel-big',
   },
   {
     id: uuid.v4(),
     name: 'Неллиэль Ту Одельшванк . Любовь',
     avatar: 'love-nel',
+    image: 'love-nel-big',
   },
   {
     id: uuid.v4(),
     name: 'Неллиэль Ту Одельшванк . Зонт',
     avatar: 'parasol-nel',
+    image: 'parasol-nel-big',
   },
   {
     id: uuid.v4(),
@@ -363,16 +401,19 @@ const characters = [
     id: uuid.v4(),
     name: 'Нему Кроцучи . Купальник',
     avatar: 'swimsuit-nemu',
+    image: 'swimsuit-nemu-big',
   },
   {
     id: uuid.v4(),
     name: 'Нему Кроцучи . Рождество',
     avatar: 'xmas-nemu',
+    image: 'xmas-nemu-big',
   },
   {
     id: uuid.v4(),
     name: 'Нему Кроцучи . Пляж',
     avatar: 'beach-nemu',
+    image: 'beach-nemu-big',
   },
   {
     id: uuid.v4(),
@@ -381,32 +422,36 @@ const characters = [
     isLimited: true,
     exchange: [224, 356, 158],
     receiving: [323, 125],
-    duration: 4,
   },
   {
     id: uuid.v4(),
     name: 'Нойтра . Зонт',
     avatar: 'parasol-nnoitra',
+    image: 'parasol-nnoitra-big',
   },
   {
     id: uuid.v4(),
     name: 'Иноуэ Орихиме . Купальник',
     avatar: 'swimsuit-orihime',
+    image: 'swimsuit-orihime-big',
   },
   {
     id: uuid.v4(),
     name: 'Иноуэ Орихиме . Хеллоуин',
     avatar: 'halloween-orihime',
+    image: 'halloween-orihime-big',
   },
   {
     id: uuid.v4(),
     name: 'Иноуэ Орихиме . Лето',
     avatar: 'sammer-orihime',
+    image: 'sammer-orihime-big',
   },
   {
     id: uuid.v4(),
     name: 'Иноуэ Орихиме . Пляж',
     avatar: 'beach-orihime',
+    image: 'beach-orihime-big',
   },
   {
     id: uuid.v4(),
@@ -417,11 +462,13 @@ const characters = [
     id: uuid.v4(),
     name: 'Рангику Мацумото . Купальник',
     avatar: 'swimsuit-rangiku',
+    image: 'swimsuit-rangiku-big',
   },
   {
     id: uuid.v4(),
     name: 'Рангику Мацумото . Любовь',
     avatar: 'love-rangiku',
+    image: 'love-rangiku-big',
   },
   {
     id: uuid.v4(),
@@ -432,16 +479,19 @@ const characters = [
     id: uuid.v4(),
     name: 'Рукия Кучики . Новый год',
     avatar: 'new-year-rukia',
+    image: 'new-year-rukia-big',
   },
   {
     id: uuid.v4(),
     name: 'Рукия Кучики . Тэнгу',
     avatar: 'tengu-rukia',
+    image: 'tengu-rukia-big',
   },
   {
     id: uuid.v4(),
     name: 'Рукия Кучики . Любовь',
     avatar: 'love-rukia',
+    image: 'love-rukia-big',
   },
   {
     id: uuid.v4(),
@@ -452,16 +502,19 @@ const characters = [
     id: uuid.v4(),
     name: 'Садо . Бразо Дереча де Гиганте',
     avatar: 'sado-v2',
+    image: 'sado-v2-big',
   },
   {
     id: uuid.v4(),
     name: 'Саджин Комамура',
     avatar: 'sajin',
+    image: 'sajin-big',
   },
   {
     id: uuid.v4(),
     name: 'Саджин Комамура . Рождество',
     avatar: 'xmas-sajin',
+    image: 'xmas-sajin-big',
   },
   {
     id: uuid.v4(),
@@ -470,12 +523,13 @@ const characters = [
     isLimited: true,
     exchange: [279, 345, 81, 147],
     receiving: [246, 48],
-    duration: 4,
+    image: 'shinji-big',
   },
   {
     id: uuid.v4(),
     name: 'Шинджи Хирако . Капитан',
     avatar: 'captain-shinji',
+    image: 'captain-shinji-big',
   },
   {
     id: uuid.v4(),
@@ -501,11 +555,13 @@ const characters = [
     id: uuid.v4(),
     name: 'Сой Фон . Лето',
     avatar: 'sammer-soi-fon',
+    image: 'sammer-soi-fon-big',
   },
   {
     id: uuid.v4(),
     name: 'Сой Фон . Хеллоуин',
     avatar: 'halloween-soi-fon',
+    image: 'halloween-soi-fon-big',
   },
   {
     id: uuid.v4(),
@@ -521,31 +577,37 @@ const characters = [
     id: uuid.v4(),
     name: 'Сун-Сун . Зонт',
     avatar: 'parasol-sun-sun',
+    image: 'parasol-sun-sun-big',
   },
   {
     id: uuid.v4(),
     name: 'Заельапорро',
     avatar: 'szayelaporro',
+    image: 'szayelaporro-big',
   },
   {
     id: uuid.v4(),
     name: 'Заельапорро . Зонт',
     avatar: 'parasol-szayelaporro',
+    image: 'parasol-szayelaporro-big',
   },
   {
     id: uuid.v4(),
     name: 'Тессай Цукабиши',
     avatar: 'tessai',
+    image: 'tessai-big',
   },
   {
     id: uuid.v4(),
     name: 'Канаме Тоусен',
     avatar: 'tosen',
+    image: 'tosen-big',
   },
   {
     id: uuid.v4(),
     name: 'Тоширо Хицугая . Банкай',
     avatar: 'toshiro',
+    image: 'toshiro-big',
   },
   {
     id: uuid.v4(),
@@ -554,12 +616,12 @@ const characters = [
     isLimited: true,
     exchange: [290, 356, 92, 158],
     receiving: [257, 59],
-    duration: 4,
   },
   {
     id: uuid.v4(),
     name: 'Тоширо Хицугая . Хеллоуин',
     avatar: 'halloween-toshiro',
+    image: 'halloween-toshiro-big',
   },
   {
     id: uuid.v4(),
@@ -573,7 +635,6 @@ const characters = [
     isLimited: true,
     receiving: [202, 4],
     exchange: [235, 301, 37, 103],
-    duration: 4,
   },
   {
     id: uuid.v4(),
@@ -582,7 +643,6 @@ const characters = [
     isLimited: true,
     receiving: [268, 70],
     exchange: [301, 367, 103, 169],
-    duration: 4,
   },
   {
     id: uuid.v4(),
@@ -598,6 +658,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Рецу Унохана',
     avatar: 'unohana',
+    image: 'unohana-big',
   },
   {
     id: uuid.v4(),
@@ -606,7 +667,7 @@ const characters = [
     isLimited: true,
     exchange: [213, 345, 147],
     receiving: [312, 114],
-    duration: 4,
+    image: 'swimsuit-unohana-big',
   },
   {
     id: uuid.v4(),
@@ -622,6 +683,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Кисуке Урахара',
     avatar: 'urahara',
+    image: 'urahara-big',
   },
   {
     id: uuid.v4(),
@@ -630,27 +692,31 @@ const characters = [
     isLimited: true,
     exchange: [246, 378, 180],
     receiving: [345, 147],
-    duration: 4,
+    image: 'captain-urahara-big',
   },
   {
     id: uuid.v4(),
     name: 'Кисуке Урахара . Какао',
     avatar: 'coco-urahara',
+    image: 'coco-urahara-big',
   },
   {
     id: uuid.v4(),
     name: 'Уруру Цумугия',
     avatar: 'ururu',
+    image: 'ururu-big',
   },
   {
     id: uuid.v4(),
     name: 'Белый Ичиго',
     avatar: 'white-ichigo',
+    image: 'white-ichigo-big',
   },
   {
     id: uuid.v4(),
     name: 'Белый Ичиго . Пустификация',
     avatar: 'white-ichigo-v2',
+    image: 'white-ichigo-v2-big',
   },
   {
     id: uuid.v4(),
@@ -666,6 +732,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Ячиру Кусаджиши . Хеллоуин',
     avatar: 'halloween-yachiru',
+    image: 'halloween-yachiru-big',
   },
   {
     id: uuid.v4(),
@@ -674,12 +741,13 @@ const characters = [
     isLimited: true,
     exchange: [224, 290],
     receiving: [389, 191],
-    duration: 4,
+    image: 'yammy-big',
   },
   {
     id: uuid.v4(),
     name: 'Йоруичи Шихоин',
     avatar: 'yoruichi',
+    image: 'yoruichi-big',
   },
   {
     id: uuid.v4(),
@@ -688,134 +756,44 @@ const characters = [
     isLimited: true,
     receiving: [367, 169],
     exchange: [202, 268, 4],
-    duration: 4,
+    image: 'yoruichi-v2-big',
   },
   {
     id: uuid.v4(),
     name: 'Йоруичи Шихоин . Купальник',
     avatar: 'swimsuit-yoruichi',
+    image: 'swimsuit-yoruichi-big',
   },
   {
     id: uuid.v4(),
     name: 'Йоруичи Шихоин . Какао',
     avatar: 'coco-yoruichi',
+    image: 'coco-yoruichi-big',
   },
   {
     id: uuid.v4(),
     name: 'Йоруичи Шихоин . Капитан',
     avatar: 'captain-yoruichi',
+    image: 'captain-yoruichi-big',
   },
   {
     id: uuid.v4(),
     name: 'Йоруичи Шихоин . Хеллоуин',
     avatar: 'halloween-yoruichi',
+    image: 'halloween-yoruichi-big',
   },
   {
     id: uuid.v4(),
     name: 'Йоруичи Шихоин . Пляж',
     avatar: 'beach-yoruichi',
+    image: 'beach-yoruichi-big',
   },
   {
     id: uuid.v4(),
     name: 'Зоммари',
     avatar: 'zommari',
+    image: 'zommari-big',
   }
 ];
 
-const invoices = [
-  {
-    customer_id: characters[0].id,
-    amount: 15795,
-    status: 'pending',
-    date: '2022-12-06',
-  },
-  {
-    customer_id: characters[1].id,
-    amount: 20348,
-    status: 'pending',
-    date: '2022-11-14',
-  },
-  {
-    customer_id: characters[4].id,
-    amount: 3040,
-    status: 'paid',
-    date: '2022-10-29',
-  },
-  {
-    customer_id: characters[3].id,
-    amount: 44800,
-    status: 'paid',
-    date: '2023-09-10',
-  },
-  {
-    customer_id: characters[5].id,
-    amount: 34577,
-    status: 'pending',
-    date: '2023-08-05',
-  },
-  {
-    customer_id: characters[2].id,
-    amount: 54246,
-    status: 'pending',
-    date: '2023-07-16',
-  },
-  {
-    customer_id: characters[0].id,
-    amount: 666,
-    status: 'pending',
-    date: '2023-06-27',
-  },
-  {
-    customer_id: characters[3].id,
-    amount: 32545,
-    status: 'paid',
-    date: '2023-06-09',
-  },
-  {
-    customer_id: characters[4].id,
-    amount: 1250,
-    status: 'paid',
-    date: '2023-06-17',
-  },
-  {
-    customer_id: characters[5].id,
-    amount: 8546,
-    status: 'paid',
-    date: '2023-06-07',
-  },
-  {
-    customer_id: characters[1].id,
-    amount: 500,
-    status: 'paid',
-    date: '2023-08-19',
-  },
-  {
-    customer_id: characters[5].id,
-    amount: 8945,
-    status: 'paid',
-    date: '2023-06-03',
-  },
-  {
-    customer_id: characters[2].id,
-    amount: 1000,
-    status: 'paid',
-    date: '2022-06-05',
-  },
-];
-
-const revenue = [
-  { month: 'Jan', revenue: 2000 },
-  { month: 'Feb', revenue: 1800 },
-  { month: 'Mar', revenue: 2200 },
-  { month: 'Apr', revenue: 2500 },
-  { month: 'May', revenue: 2300 },
-  { month: 'Jun', revenue: 3200 },
-  { month: 'Jul', revenue: 3500 },
-  { month: 'Aug', revenue: 3700 },
-  { month: 'Sep', revenue: 2500 },
-  { month: 'Oct', revenue: 2800 },
-  { month: 'Nov', revenue: 3000 },
-  { month: 'Dec', revenue: 4800 },
-];
-
-export {users, characters, invoices, revenue}
+export {users, characters}
