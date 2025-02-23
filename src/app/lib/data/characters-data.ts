@@ -24,28 +24,40 @@ const characters = [
     exchange: [246, 312, 48, 114],
     receiving: [213, 15],
     image: 'arrancar-aizen-big',
+    class: 'unique',
+    typeRG: 'non RG',
   },
   {
     id: uuid.v4(),
     name: 'Сосуке Айзен . 4-слияние',
     avatar: 'hogyoku-aizen',
+    image: 'hogyoku-aizen-big',
+    class: 'great',
+    typeRG: '2.5k',
   },
   {
     id: uuid.v4(),
     name: 'Сосуке Айзен . Белый день',
     avatar: 'white-day-aizen',
     image: 'white-day-aizen-big',
+    class: 'unique',
+    typeRG: 'non RG',
   },
   {
     id: uuid.v4(),
     name: 'Сосуке Айзен . Финальное слияние',
     avatar: 'final-fusion-aizen',
     image: 'final-fusion-aizen-big',
+    class: 'final',
+    typeRG: '2k',
   },
   {
     id: uuid.v4(),
     name: 'Сосуке Айзен . Зонт',
     avatar: 'parasol-aizen',
+    image: 'parasol-aizen-big',
+    class: 'unique',
+    typeRG: '1k',
   },
   {
     id: uuid.v4(),
@@ -55,11 +67,16 @@ const characters = [
     exchange: [202, 334, 4, 136],
     receiving: [301, 103],
     image: 'barragan-big',
+    class: 'great',
+    typeRG: 'non RG',
   },
   {
     id: uuid.v4(),
     name: 'Барагган Луизенбарн . Ресуррексион',
     avatar: 'barragan-v2',
+    image: 'barragan-v2-big',
+    class: 'final',
+    typeRG: '1k',
   },
   {
     id: uuid.v4(),
@@ -75,24 +92,40 @@ const characters = [
     receiving: [279, 81],
     exchange: [312, 378, 114, 180],
     image: 'new-year-byakuya-big',
+    class: 'unique',
+    typeRG: 'non RG',
   },
   {
     id: uuid.v4(),
     name: 'Бьякуя Кучики . Белый день',
     avatar: 'white-day-byakuya',
     image: 'white-day-byakuya-big',
+    class: 'unique',
+    typeRG: 'non RG',
   },
   {
     id: uuid.v4(),
     name: 'Бьякуя Кучики . Какао',
     avatar: 'coco-byakuya',
     image: 'coco-byakuya-big',
+    class: 'great',
+    typeRG: '1k',
   },
   {
     id: uuid.v4(),
     name: 'Бьякуя Кучики . Лис',
     avatar: 'demon-byakuya',
     image: 'demon-byakuya-big',
+    class: 'great',
+    typeRG: '2k',
+  },
+  {
+    id: uuid.v4(),
+    name: 'Бьякуя Кучики . SP',
+    avatar: 'byakuya-sp',
+    image: 'byakuya-sp-big',
+    class: 'great',
+    typeRG: '2k',
   },
   {
     id: uuid.v4(),
@@ -110,6 +143,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Шигекуни Генрюусай Ямамото . Пламенный клинок',
     avatar: 'genryusai-v3',
+    image: 'genryusai-v3-big',
   },
   {
     id: uuid.v4(),
@@ -174,6 +208,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Гриммджоу . Хеллоуин',
     avatar: 'halloween-grimmjow',
+    image: 'halloween-grimmjow-big',
   },
   {
     id: uuid.v4(),
@@ -206,6 +241,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Харрибел . Зонт',
     avatar: 'parasol-halibel',
+    image: 'parasol-halibel-big',
   },
   {
     id: uuid.v4(),
@@ -226,6 +262,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Ичиго Куросаки . Пустификация',
     avatar: 'vasto-lorde-ichigo',
+    image: 'vasto-lorde-ichigo-big',
   },
   {
     id: uuid.v4(),
@@ -278,11 +315,13 @@ const characters = [
     id: uuid.v4(),
     name: 'Джуширо Укитаке . Зонт',
     avatar: 'parasol-jushiro',
+    image: 'parasol-jushiro-big',
   },
   {
     id: uuid.v4(),
     name: 'Кайен Шиба . Лис',
     avatar: 'demon-kaien',
+    image: 'demon-kaien-big',
   },
   {
     id: uuid.v4(),
@@ -474,6 +513,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Рангику Мацумото . Лис',
     avatar: 'demon-rangiku',
+    image: 'demon-rangiku-big',
   },
   {
     id: uuid.v4(),
@@ -545,6 +585,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Сюнсуй Кьёраку . Зонт',
     avatar: 'parasol-shunsui',
+    image: 'parasol-shunsui-big',
   },
   {
     id: uuid.v4(),
@@ -572,6 +613,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Старк . Какао',
     avatar: 'coco-starrk',
+    image: 'coco-starrk-big',
   },
   {
     id: uuid.v4(),
@@ -616,6 +658,7 @@ const characters = [
     isLimited: true,
     exchange: [290, 356, 92, 158],
     receiving: [257, 59],
+    image: 'toshiro-v2-big',
   },
   {
     id: uuid.v4(),
@@ -643,11 +686,13 @@ const characters = [
     isLimited: true,
     receiving: [268, 70],
     exchange: [301, 367, 103, 169],
+    image: 'ulquiorra-v2-big',
   },
   {
     id: uuid.v4(),
     name: 'Улькиорра . SP',
     avatar: 'ulquiorra-sp',
+    image: 'ulquiorra-sp-big',
   },
   {
     id: uuid.v4(),
@@ -673,6 +718,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Рецу Унохана . Рождество',
     avatar: 'xmas-unohana',
+    image: 'xmas-unohana-big',
   },
   {
     id: uuid.v4(),
@@ -722,6 +768,7 @@ const characters = [
     id: uuid.v4(),
     name: 'Белый Ичиго . Какао',
     avatar: 'coco-white-ichigo',
+    image: 'coco-white-ichigo-big',
   },
   {
     id: uuid.v4(),
