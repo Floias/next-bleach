@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 import postgres from 'postgres';
-import {users, characters} from '../lib/data/characters-data';
+import {users} from '../lib/data/characters-data';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
@@ -35,7 +35,7 @@ async function seedUsers() {
   return insertedUsers;
 }
 
-async function seedCharacters() {
+/* async function seedCharacters() {
   await sql`
     CREATE TABLE IF NOT EXISTS characters (
       id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
@@ -50,7 +50,7 @@ async function seedCharacters() {
   const insertedCharacters = await Promise.all(
     characters.map(
       (character) => sql`
-        INSERT INTO characters (id, name, avatar, isLimited, exchange, receiving, image, class, typeRG)
+        INSERT INTO characters (id, name, avatar, isLimited, exchange, receiving)
         VALUES (
           ${character.id},
           ${character.name},
@@ -58,9 +58,6 @@ async function seedCharacters() {
           ${character.isLimited || false},
           ${character.exchange || null},
           ${character.receiving || null},
-          ${character.image || null},
-          ${character.class || null},
-          ${character.typeRG || null}
         )
         ON CONFLICT (id) DO NOTHING;
       `,
@@ -68,14 +65,13 @@ async function seedCharacters() {
   );
 
   return insertedCharacters;
-}
+} */
 
 export async function GET() {
   try {
     await ensureUuidExtension();
     await sql.begin(() => [
       seedUsers(),
-      seedCharacters(),
     ]);
 
     return Response.json({ message: 'Database seeded successfully' });
