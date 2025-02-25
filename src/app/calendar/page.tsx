@@ -8,6 +8,7 @@ export default function Page() {
     <section className={styles.calendar}>
       <div className={`container`}>
         <h2>Календарь вербовок</h2>
+        <p>Расчет ведется от текущего дня для сервера RU65</p>
         <ul className={styles.calendar__list}>
           {
             characters.map((character) => {
