@@ -50,14 +50,17 @@ async function seedCharacters() {
   const insertedCharacters = await Promise.all(
     characters.map(
       (character) => sql`
-        INSERT INTO characters (id, name, avatar, isLimited, exchange, receiving)
+        INSERT INTO characters (id, name, avatar, isLimited, exchange, receiving, image, class, typeRG)
         VALUES (
           ${character.id},
           ${character.name},
           ${character.avatar},
           ${character.isLimited || false},
           ${character.exchange || null},
-          ${character.receiving || null}
+          ${character.receiving || null},
+          ${character.image || null},
+          ${character.class || null},
+          ${character.typeRG || null}
         )
         ON CONFLICT (id) DO NOTHING;
       `,
@@ -70,7 +73,7 @@ async function seedCharacters() {
 export async function GET() {
   try {
     await ensureUuidExtension();
-    const result = await sql.begin((sql) => [
+    await sql.begin(() => [
       seedUsers(),
       seedCharacters(),
     ]);
