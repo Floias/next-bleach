@@ -1,3 +1,7 @@
 export default function Page() {
-  return <p>Статьи</p>;
+  return (
+    <div className={`container`}>
+      <p>Страница находится в разработке.</p>
+    </div>
+  )
 }

@@ -16,7 +16,7 @@ export default function Page() {
                   <li key={character.id}>
                     <Image
                       className={styles.calendar__avatar}
-                      src={`/images/avatars/${character.avatar}.png`}
+                      src={`/images/avatars/${character.avatar}-Photoroom.png`}
                       alt={`Аватар ${character.name}`}
                       width={66}
                       height={68}

@@ -4,7 +4,7 @@ import { HeaderLinks } from './definitions';
 const headerLinks: HeaderLinks[] = [
   {
     id: uuid.v4(),
-    href: "home",
+    href: "/",
     text: "Главная"
   },
   {

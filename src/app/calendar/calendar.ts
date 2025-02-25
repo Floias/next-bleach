@@ -1,14 +1,25 @@
 import dayjs from 'dayjs';
 
-const dayCurrent = 187;
 const totalDays = 399;
-const dayDate = '2025-02-15';
+const referenceDate = dayjs('2025-02-15');
+const referenceDay = 187;
+
+const getCurrentDayOfCycle = () => {
+  const currentDate = dayjs();
+  const daysDifference = currentDate.diff(referenceDate, 'day');
+  const currentDay = (referenceDay + daysDifference) % totalDays;
+  return currentDay >= 0 ? currentDay : currentDay + totalDays;
+};
 
 export const calculatesDate = (num: number) => {
-  if (num >= dayCurrent) {
-    const delta = num - dayCurrent;
-    return dayjs(dayDate).add(delta, 'day').format('DD-MM-YYYY');
+  const currentDayOfCycle = getCurrentDayOfCycle();
+  let delta;
+
+  if (num >= currentDayOfCycle) {
+    delta = num - currentDayOfCycle;
+  } else {
+    delta = totalDays + num - currentDayOfCycle;
   }
-  const delta = totalDays + num - dayCurrent;
-  return dayjs(dayDate).add(delta, 'day').format('DD-MM-YYYY');
-}
+
+  return dayjs().add(delta, 'day').format('DD-MM-YYYY');
+};
