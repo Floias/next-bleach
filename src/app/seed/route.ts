@@ -67,11 +67,36 @@ async function seedUsers() {
   return insertedCharacters;
 } */
 
+async function addCharacter() {
+  const newCharacter = {
+    name: 'Йоруичи Шихоин . Механизм',
+    avatar: 'mecha-yoruichi',
+    isLimited: false,
+    exchange: null,
+    receiving: null,
+  };
+
+  const insertedCharacter = await sql`
+    INSERT INTO characters (name, avatar, isLimited, exchange, receiving)
+    VALUES (
+      ${newCharacter.name},
+      ${newCharacter.avatar},
+      ${newCharacter.isLimited},
+      ${newCharacter.exchange},
+      ${newCharacter.receiving}
+    )
+    RETURNING *;
+  `;
+
+  return insertedCharacter;
+}
+
 export async function GET() {
   try {
     await ensureUuidExtension();
     await sql.begin(() => [
       seedUsers(),
+      addCharacter()
     ]);
 
     return Response.json({ message: 'Database seeded successfully' });

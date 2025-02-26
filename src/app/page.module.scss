@@ -1,0 +1,19 @@
+.page {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-height: 100svh;
+  padding: 40px;
+  gap: 30px;
+
+  &__background {
+    position: absolute;
+    inset: 0;
+    content: '';
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    z-index: -1;
+  }
+}
+

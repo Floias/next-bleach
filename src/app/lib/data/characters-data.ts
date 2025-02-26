@@ -438,6 +438,11 @@ const characters = [
   },
   {
     id: uuid.v4(),
+    name: 'Неллиэль Ту Одельшванк . Рождество',
+    avatar: 'xmas-nel',
+  },
+  {
+    id: uuid.v4(),
     name: 'Нему Кроцучи . Купальник',
     avatar: 'swimsuit-nemu',
     image: 'swimsuit-nemu-big',
@@ -453,6 +458,12 @@ const characters = [
     name: 'Нему Кроцучи . Пляж',
     avatar: 'beach-nemu',
     image: 'beach-nemu-big',
+  },
+  {
+    id: uuid.v4(),
+    name: 'Нему Кроцучи . Механизм',
+    avatar: 'mecha-nemu',
+    image: 'mecha-nemu-big',
   },
   {
     id: uuid.v4(),
@@ -834,6 +845,18 @@ const characters = [
     name: 'Йоруичи Шихоин . Пляж',
     avatar: 'beach-yoruichi',
     image: 'beach-yoruichi-big',
+  },
+  {
+    id: uuid.v4(),
+    name: 'Йоруичи Шихоин . Горячий песок',
+    avatar: 'desert-yoruichi',
+    image: 'desert-yoruichi-big',
+  },
+  {
+    id: uuid.v4(),
+    name: 'Йоруичи Шихоин . Механизм',
+    avatar: 'mecha-yoruichi',
+    image: 'mecha-yoruichi-big',
   },
   {
     id: uuid.v4(),
