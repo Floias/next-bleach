@@ -212,6 +212,12 @@ const characters = [
   },
   {
     id: uuid.v4(),
+    name: 'Гриммджоу . Какао',
+    avatar: 'coco-grimmjow',
+    image: 'coco-grimmjow-big',
+  },
+  {
+    id: uuid.v4(),
     name: 'Харрибел',
     avatar: 'halibel',
     isLimited: true,
@@ -286,6 +292,16 @@ const characters = [
     id: uuid.v4(),
     name: 'Ичиго Куросаки . SP1',
     avatar: 'ichigo-sp1',
+  },
+  {
+    id: uuid.v4(),
+    name: 'Ичиго Куросаки . Лис',
+    avatar: 'demon-ichigo',
+  },
+  {
+    id: uuid.v4(),
+    name: 'Ичиго Куросаки . SP2',
+    avatar: 'ichigo-sp2',
   },
   {
     id: uuid.v4(),

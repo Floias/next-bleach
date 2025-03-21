@@ -121,6 +121,7 @@ export const charactersCharacteristics = [
   },
   {
     idCharacter: 'a03225f0-6ead-4dfe-8423-66ff0f17b071',
+    image: 'halloween-gin-big',
     class: 'great',
     typeRG: '1k',
   },
@@ -424,6 +425,7 @@ export const charactersCharacteristics = [
   },
   {
     idCharacter: '908b345c-6151-415d-aa3a-827b31a31411',
+    image: 'orient-orihime-big',
     class: 'unique',
     typeRG: '1k',
   },
@@ -676,8 +678,7 @@ export const charactersCharacteristics = [
   },
   {
     idCharacter: 'a725e9a2-08b0-4b6c-b003-b8fcdc10d157',
-    name: 'Белый Ичиго . Лис',
-    avatar: 'demon-white-ichigo',
+    image: 'demon-white-ichigo-big',
     class: 'great',
     typeRG: '2k',
   },
@@ -750,5 +751,71 @@ export const charactersCharacteristics = [
     image: 'zommari-big',
     class: 'final',
     typeRG: 'non RG',
+  },
+  {
+    idCharacter: '6ed2fa36-3be4-4070-b879-7eefb78ea81d',
+    image: 'fox-lisa-big',
+    class: 'unique',
+    typeRG: '2k',
+  },
+  {
+    idCharacter: 'ec71be33-9418-4bae-8f89-4456d4c7a43a',
+    image: 'aizen-sp-big',
+    class: 'great',
+    typeRG: '2.5k',
+  },
+  {
+    idCharacter: 'dea793f5-357c-4296-9aac-234227fdcb25',
+    image: 'demon-ichigo-big',
+    class: 'great',
+    typeRG: '2k',
+  },
+  {
+    idCharacter: '14663023-1b97-4c94-b113-e16bd0d96638',
+    image: 'coco-grimmjow-big',
+    class: 'unique',
+    typeRG: '2.5k',
+  },
+  {
+    idCharacter: '03b0e0ea-cef9-460b-a031-177d9b6ba6d0',
+    image: 'demon-sado-big',
+    class: 'final',
+    typeRG: '2.5k',
+  },
+  {
+    idCharacter: '23c1ffc5-40ed-4854-a873-3a16ebe10788',
+    image: 'xmas-nanao-big',
+    class: 'great',
+    typeRG: '1k',
+  },
+  {
+    idCharacter: '334c7a21-f28a-4dac-838d-f60ca2f6f6cd',
+    image: 'ichigo-sp2-big',
+    class: 'final',
+    typeRG: '2.5k',
+  },
+  {
+    idCharacter: '322bdb75-b855-42b3-822b-c9ed582db00d',
+    image: 'desert-ichigo-big',
+    class: 'final',
+    typeRG: '1k',
+  },
+  {
+    idCharacter: 'da7f1441-fa69-4353-a4b0-57debe5e4b3e',
+    image: 'xmas-soi-fon-big',
+    class: 'unique',
+    typeRG: '1k',
+  },
+  {
+    idCharacter: 'abe5c66f-4e01-4fd7-8ae2-8d52f320fd80',
+    image: 'tensa-zangetsu-big',
+    class: 'unique',
+    typeRG: '2.5k',
+  },
+  {
+    idCharacter: '59f09f62-5ffe-48a1-8f3b-5e9b07fea6ad',
+    image: 'white-zangetsu-big',
+    class: 'great',
+    typeRG: '2.5k',
   }
 ];

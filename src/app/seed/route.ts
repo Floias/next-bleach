@@ -1,6 +1,4 @@
-import bcrypt from 'bcrypt';
 import postgres from 'postgres';
-import {users} from '../lib/data/characters-data';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
@@ -11,66 +9,10 @@ async function ensureUuidExtension() {
   }
 }
 
-async function seedUsers() {
-  await sql`
-    CREATE TABLE IF NOT EXISTS users (
-      id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-      name VARCHAR(255) NOT NULL,
-      email TEXT NOT NULL UNIQUE,
-      password TEXT NOT NULL
-    );
-  `;
-
-  const insertedUsers = await Promise.all(
-    users.map(async (user) => {
-      const hashedPassword = await bcrypt.hash(user.password, 10);
-      return sql`
-        INSERT INTO users (id, name, email, password)
-        VALUES (${user.id}, ${user.name}, ${user.email}, ${hashedPassword})
-        ON CONFLICT (id) DO NOTHING;
-      `;
-    }),
-  );
-
-  return insertedUsers;
-}
-
-/* async function seedCharacters() {
-  await sql`
-    CREATE TABLE IF NOT EXISTS characters (
-      id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-      name VARCHAR(255) NOT NULL,
-      avatar VARCHAR(255) NOT NULL,
-      isLimited BOOLEAN DEFAULT FALSE,
-      exchange INT[],
-      receiving INT[]
-    );
-  `;
-
-  const insertedCharacters = await Promise.all(
-    characters.map(
-      (character) => sql`
-        INSERT INTO characters (id, name, avatar, isLimited, exchange, receiving)
-        VALUES (
-          ${character.id},
-          ${character.name},
-          ${character.avatar},
-          ${character.isLimited || false},
-          ${character.exchange || null},
-          ${character.receiving || null},
-        )
-        ON CONFLICT (id) DO NOTHING;
-      `,
-    ),
-  );
-
-  return insertedCharacters;
-} */
-
 async function addCharacter() {
   const newCharacter = {
-    name: 'Йоруичи Шихоин . Механизм',
-    avatar: 'mecha-yoruichi',
+    name: 'Белый Зангецу',
+    avatar: 'white-zangetsu',
     isLimited: false,
     exchange: null,
     receiving: null,
@@ -91,11 +33,25 @@ async function addCharacter() {
   return insertedCharacter;
 }
 
+/* async function deleteCharacterById(id: string) {
+  try {
+    const deletedCharacter = await sql`
+      DELETE FROM characters
+      WHERE id = ${id}
+      RETURNING *;
+    `;
+
+    return deletedCharacter;
+  } catch (error) {
+    console.error('Error deleting character:', error);
+    throw error;
+  }
+} */
+
 export async function GET() {
   try {
     await ensureUuidExtension();
     await sql.begin(() => [
-      seedUsers(),
       addCharacter()
     ]);
 

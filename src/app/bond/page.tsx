@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { fetchCharacters } from '@/app/lib/data';
 import styles from '../css/blocks/bonds.module.scss';
-import CopyButton from "./copy-button";
 
 export default async function Page() {
   try {
@@ -20,7 +19,6 @@ export default async function Page() {
                   height={68}
                 />
                 <p>{character.name}</p>
-                <CopyButton text={character.id} />
               </li>
             ))}
           </ul>
